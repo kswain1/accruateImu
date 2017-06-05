@@ -30,7 +30,10 @@ Once both of the example code are downloaded from the above links. Add those lib
 # Step 3 Understanding the AHRS DATA
 
 ### Warning Math Terms will be used! Don't Worry I will use Laymans Terms
+
 ![rabbit](https://cloud.githubusercontent.com/assets/9138420/26771203/6012dcce-4982-11e7-92f5-1ce03eddde70.gif)
+
+
 The AHRS example sketchs reads raw data from the board's accelerometer/magnetometer and converts the raw data into easy to understand Euler angles.
 
 It does this with a bit of trigonometry (you remember high school math, right!?), but to save you from dusting off the textbooks or wading through endless application notes, we've wrapped up all of the calculation to convert raw accelerometer and magnetometer data to degrees in a convenient helper function:
@@ -38,8 +41,10 @@ It does this with a bit of trigonometry (you remember high school math, right!?)
 bool getOrientation(sensors_vec_t *orientation)
 
 ### Euler Angles
-reference point in three-dimensional space.
+Reference point in three-dimensional space.
 
 Various names are employed for the three angles, but the most common terminology with aircraft is Roll (x), Pitch (y) and Yaw (z).
+
+![airplane_control_roll_pitch_yaw](https://cloud.githubusercontent.com/assets/9138420/26771270/c671d740-4982-11e7-834d-f994621421af.gif)
 
 
