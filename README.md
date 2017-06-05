@@ -26,3 +26,12 @@ Once both of the example code are downloaded from the above links. Add those lib
 
 - Compile the code and the output will look similar to the content below.
 ![sensors_01_ahrsoutput](https://cloud.githubusercontent.com/assets/9138420/26771049/4ad558ec-4981-11e7-8c13-04103b56472b.png)
+
+# Step 3 Understanding the AHRS DATA
+
+### Warning Math Terms will be used! Don't Worry I will use Laymans Terms
+The AHRS example sketchs reads raw data from the board's accelerometer/magnetometer and converts the raw data into easy to understand Euler angles.
+
+It does this with a bit of trigonometry (you remember high school math, right!?), but to save you from dusting off the textbooks or wading through endless application notes, we've wrapped up all of the calculation to convert raw accelerometer and magnetometer data to degrees in a convenient helper function:
+
+
