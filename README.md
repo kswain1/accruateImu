@@ -13,4 +13,16 @@ https://learn.adafruit.com/conductive-thread
 ![img_1293](https://cloud.githubusercontent.com/assets/9138420/26770852/e6e7c7da-497f-11e7-8a0f-29a1274de3c2.JPG)
 
 # Step Two Download Motion Tracking Code 
-We are using the LSMD90 imu
+We are using the LSMD90 IMU sensor and Arduino Kit Software Download is below 
+
+- https://learn.adafruit.com/adafruit-lsm9ds0-accelerometer-gyro-magnetometer-9-dof-breakouts/wiring-and-test
+- AHRS CODE https://github.com/adafruit/Adafruit_AHRS/archive/master.zip
+
+
+## Loading Up The AHRS Sample Sketch 
+Once both of the example code are downloaded from the above links. Add those libraries to your Arduino AHRS library folder. Open up the Arduino platform and there should be in a ahrs_lsm9ds0 example in your libraries folder. 
+
+![sensors_00_sketch](https://cloud.githubusercontent.com/assets/9138420/26771029/2594cf22-4981-11e7-9efe-920858cbafc7.png)
+
+- Compile the code and the output will look similar to the content below.
+![sensors_01_ahrsoutput](https://cloud.githubusercontent.com/assets/9138420/26771049/4ad558ec-4981-11e7-8c13-04103b56472b.png)
